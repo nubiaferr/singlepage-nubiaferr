@@ -27,6 +27,12 @@
         grid-template-columns: 1fr;
     }
 
+    .text-contact{
+        position: relative;
+        right: 2rem;
+        bottom: -1rem;
+    }
+
     .gallery-img{
         width: 100%;
         max-width: 100%;
