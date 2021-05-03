@@ -1,0 +1,23 @@
+.intro-content{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+    position: relative;
+}
+
+.text-intro, .intro-img{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+
+.intro-img img, .intro-img svg{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 2rem;
+    margin-bottom: 2rem;
+}
+

@@ -1,0 +1,38 @@
+.top3-call{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    /* max-width: 80rem; */
+    text-align: center;
+}
+
+.top3-call h2{
+    color: var(--red-color);
+}
+
+.top3-call p a{
+    color: var(--red-color);
+    position: relative;
+}
+
+.top3-call p a::after{
+        content: '';
+        position: absolute;
+        top: 3rem;
+        left: 0.5%;
+        width: 0;
+        height: 0.2rem;
+        background: var(--red-color);
+        transition: all 300ms ease-in-out;
+    }
+
+    .top3-call p a:hover{
+        background-color: rgba(252, 9, 9, 0.2);
+    }
+
+    .top3-call p a:hover::after{
+        width: 100%;   
+    }
+
+    

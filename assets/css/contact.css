@@ -1,0 +1,135 @@
+.contact-content{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--gap);
+    min-height: 100vh;
+    position: relative;
+}
+
+.text-contact h2{
+    color: var(--red-color);
+    text-align: center;
+}
+.text-contact p{
+    text-align: center;
+}
+
+.text-contact, .contact-img{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.social-network{
+    margin-top: 2rem;
+    align-content: center;
+}
+
+.social-network img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.contact-img img, .contact-img svg {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 5rem;
+}
+
+.contact-form{
+    grid-column: span 2;
+}
+
+.form-grid{
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--gap);
+    margin-top: 5rem;
+}
+
+
+.form-group{
+    flex: 1 1 32rem;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--red-color);
+
+}
+
+.form-group input, .form-group textarea{
+    border: none;
+    background: var(--gray-pink-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 2rem;
+    outline: none;
+}
+
+.form-group input:focus, .form-group textarea:focus{
+    box-shadow: 0 0 1rem 0.2rem  var(--red-color);
+}
+
+.full-width{
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group button{
+    border: 0.5rem solid var(--red-color);
+    background: none;
+    color: var(--red-color);
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover{
+    background: var(--red-color);
+    color: var(--gray-pink-color);
+}
+
+input::placeholder, textarea::placeholder{
+    color: var(--red-color);
+    font-family:'Open Sans', sans-serif;
+}
+
+.footer{
+    margin: 0;
+    padding: 2rem;
+}
+
+.footer p{
+    text-align: center;
+    color: var(--red-color);
+    font-size: 1.4rem;
+}
+
+.footer a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--red-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--beige-color);
+}
+
+.back-to-top:hover{
+    transform: translate(-3%, 3%) scale(1.2);
+}

@@ -1,0 +1,52 @@
+.top3-content{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.head-top3{
+    margin: 3rem 3rem;
+    padding-top: 1rem;
+    color: white;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+.grid img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.grid h3{
+    font-size: 4rem;
+    color: var(--red-color);
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.grid img:hover{
+    transform: rotate(15deg); 
+}
+
+.grid ul{
+    list-style: none;
+    font-size: 2rem;
+}
+
+
+/* .grid h3::before{   
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    top: -3rem;
+    left: -2rem;
+} */
+
+/* .grid h3:hover::before, */

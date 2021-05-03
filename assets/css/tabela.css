@@ -1,0 +1,40 @@
+.table-cont h2{
+    margin: 3rem 3rem;
+    padding-top: 1rem;
+}
+
+.table-cont p{
+    padding-bottom: 2rem;
+}
+
+.responsive-table{
+    overflow: hidden;
+    overflow-x: auto;
+    width: 100%;
+}
+
+table{
+    min-width: 35rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption{
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td, table th{
+    white-space: nowrap;
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid var(--red-color);
+    background-color: var(--gray-pink-color);
+}
+
+tfoot td, table th{
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
